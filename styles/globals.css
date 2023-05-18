@@ -36,3 +36,17 @@ button {
   padding: 0.5rem 1rem;
   font-weight: bold;
 }
+
+h2 {
+  color: var(--color);
+}
+
+:root {
+  --bg-color: #fff;
+  --bg-color-0: rgba(124, 120, 135, 0.15);
+  --bg-color-1: rgb(243, 244, 247);
+
+  --color: rgb(0, 112, 243);
+  --color-1: rgb(35, 41, 49);
+  --color-2: rgb(49, 52, 59);
+}

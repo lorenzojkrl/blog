@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -10,6 +12,11 @@ export default function Home() {
       </Head>
 
       <main>
+        <div className={styles.navContainer}>
+          <Link className={styles.customLink} href="/">Home</Link>
+          <Link className={styles.customLink} href="/about">About</Link>
+          <Link className={styles.customLink} href="/contacts">Contacts</Link>
+        </div>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -18,35 +25,47 @@ export default function Home() {
           Get started by editing <code>pages/index.js</code>
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <Image
+          src="/images/guillermo-alvarez-kF5nFbHBG5E-unsplash.jpg"
+          height={400}
+          width={600}
+          alt="Photo by Guillermo Álvarez on Unsplash"
+        />
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+        <Image
+          src="/images/nathan-anderson-9rNyml9OKfI-unsplash.jpg"
+          height={400}
+          width={600}
+          alt="Photo by Nathan Anderson on Unsplash"
+        />
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+        <Image
+          src="/images/joshua-sortino-f3uWi9G-lus-unsplash.jpg"
+          height={400}
+          width={600}
+          alt="Photo by Joshua Sortino on Unsplash"
+        />
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <Image
+          src="/images/chuttersnap--gS54SWrHMg-unsplash.jpg"
+          height={400}
+          width={600}
+          alt="Photo by CHUTTERSNAP on Unsplash"
+        />
+
+        <Image
+          src="/images/venti-views-bS5OwMjMc1I-unsplash.jpg"
+          height={400}
+          width={600}
+          alt="Photo by Venti Views on Unsplash"
+        />
+
+        <Image
+          src="/images/eugene-z0j9Qf9jZ58-unsplash.jpg"
+          height={400}
+          width={600}
+          alt="Photo by Eugene on Unsplash"
+        />
       </main>
 
       <footer>
@@ -86,14 +105,6 @@ export default function Home() {
           align-items: center;
           text-decoration: none;
           color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
       `}</style>
 
